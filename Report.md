@@ -33,9 +33,11 @@ I think the environment is not very complex, so the modified simpler version sti
 # Rewards
 
 Critic with full observation of all agents.
+
 ![alt text](https://github.com/tiantian20007/DRLND-CollabCompet/blob/master/res/obs_full.png "obs_full")
 
 Critic with only local observation of each agent.
+
 ![alt text](https://github.com/tiantian20007/DRLND-CollabCompet/blob/master/res/obs.png "obs")
 
 
@@ -43,7 +45,7 @@ Critic with only local observation of each agent.
 
 ## [Prioritized Experience Replay](https://arxiv.org/abs/1511.05952)
 
-Deep Q-Learning samples experience transitions uniformly from a replay memory. 
+Our algorithm samples experience transitions uniformly from a replay memory. 
 Prioritized experienced replay is based on the idea that the agent can learn more effectively from some transitions than from others, and the more important transitions should be sampled with higher probability.
 
 ![alt text](https://github.com/tiantian20007/DRLND-Navigation/blob/master/res/Prioritized-Experience-Replay.png "Prioritized Experience Replay")
