@@ -47,7 +47,8 @@ The trained parameters will be save as:
 - checkpoint_critic_0.pth
 - checkpoint_critic_1.pth
 
-We can use watch_smart_agent function to load that parameters to our network and watch the traned agent play.
+We can use 'watch_smart_agent' function to load that parameters to our network and watch the traned agent play.
+There's also a 'play' function to watch random agent play.
 
 # Result
 Our agent got an average score of +0.5 over 100 consecutive episodes after 963 episodes traning.
