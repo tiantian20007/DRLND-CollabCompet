@@ -39,7 +39,15 @@ For this project, you will not need to install Unity - this is because we have a
 (For Windows users) Check out [this link](https://support.microsoft.com/en-us/help/827218/how-to-determine-whether-a-computer-is-running-a-32-bit-version-or-64) if you need help with determining if your computer is running a 32-bit version or 64-bit version of the Windows operating system.
 
 # Run the code
-python main.py
+Type 'python main.py' in terminal and press Enter key.
+
+The trained parameters will be save as:
+- checkpoint_actor_0.pth
+- checkpoint_actor_1.pth
+- checkpoint_critic_0.pth
+- checkpoint_critic_1.pth
+
+We can use watch_smart_agent function to load that parameters to our network and watch the traned agent play.
 
 # Result
 Our agent got an average score of +0.5 over 100 consecutive episodes after 963 episodes traning.
