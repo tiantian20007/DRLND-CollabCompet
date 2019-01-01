@@ -10,7 +10,7 @@ MADDPG - Multi-Agent Deep Deterministic Policy Gradient Algorithm
 
 A DNN with 2 hidden layers which contains 256 and 128 neuron units for both actor and critic. We choose relu as the activate function. 
 First, I tried critics for each agent with full observation of all agent as input, then an modified critics with only local observation of each agent, the two models all generate the qulified result.
-The ones with full observation train a little bit long with 963 episode and the other ones took 600 episode.
+The one with full observation train a little bit long with 963 episode and the other one only took 600 episode.
 I think the environment is not very complex, so the modified simpler version still qualify. 
 
 ![alt text](https://github.com/tiantian20007/DRLND-CollabCompet/blob/master/res/algorithm.png "algorithm")
@@ -52,6 +52,6 @@ we propose to train a collection of K different sub-policies. At each episode, w
 
 ## PPO
 I got the idea from the paper: [Proximal Policy Optimization Algorithms](https://arxiv.org/abs/1707.06347)
-It's a modified versoin of policy gradient method.
+It's a modified versoin of policy gradient method. I think we can improve the actor part of the MADDPG algorithm.
 
 ![alt text](https://github.com/tiantian20007/DRLND-CollabCompet/blob/master/res/ppo.png "Result")
