@@ -210,3 +210,4 @@ if __name__ == "__main__":
     loadEnv()
 #    play()
     train()
+#    watch_smart_agent()
