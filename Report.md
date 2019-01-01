@@ -62,12 +62,14 @@ Prioritized experienced replay is based on the idea that the agent can learn mor
 ## Agents with Policy Ensembles
 
 I got the idea from the paper: [Multi Agent Actor Critic for Mixed Cooperative Competitive environments](https://arxiv.org/abs/1706.02275) 
+
 we can a recurring problem in multi-agent reinforcement learning is the environment non-stationarity due to the agents’ changing policies. This is particularly true in competitive settings, where agents can derive a strong policy by overfitting to the behavior of their competitors.
-Such policies are undesirable as they are brittle and may fail when the competitors alter strategies.To obtain multi-agent policies that are more robust to changes in the policy of competing agents,
-we propose to train a collection of K different sub-policies. At each episode, we randomly select one particular sub-policy for each agent to execute.
+
+Such policies are undesirable as they are brittle and may fail when the competitors alter strategies.To obtain multi-agent policies that are more robust to changes in the policy of competing agents, the paper propose to train a collection of K different sub-policies. At each episode, we randomly select one particular sub-policy for each agent to execute.
 
 ## PPO
 I got the idea from the paper: [Proximal Policy Optimization Algorithms](https://arxiv.org/abs/1707.06347)
+
 It's a modified versoin of policy gradient method. I think we can improve the actor part of the MADDPG algorithm.
 
 ![alt text](https://github.com/tiantian20007/DRLND-CollabCompet/blob/master/res/ppo.png "Result")
