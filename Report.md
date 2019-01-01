@@ -22,7 +22,7 @@ I think the environment is not very complex, so the modified simpler version sti
 
 ![alt text](https://github.com/tiantian20007/DRLND-CollabCompet/blob/master/res/algorithm.png "algorithm")
 
-The model i simplemented in files below
+The model is implemented in files below
 - networkforall.py
 
 
