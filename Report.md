@@ -10,7 +10,8 @@ MADDPG - Multi-Agent Deep Deterministic Policy Gradient Algorithm
 
 A DNN with 2 hidden layers which contains 256 and 128 neuron units for both actor and critic. We choose relu as the activate function. 
 First, I tried critics for each agent with full observation of all agent as input, then an modified critics with only local observation of each agent, the two models all generate the qulified result.
-The one with full observation train a little bit long with 963 episode and the other one only took 600 episode.
+
+The one with full observation train a little bit long with 963 episode and the other one only took around 800 episode.
 I think the environment is not very complex, so the modified simpler version still qualify. 
 
 ![alt text](https://github.com/tiantian20007/DRLND-CollabCompet/blob/master/res/algorithm.png "algorithm")
@@ -21,7 +22,7 @@ I think the environment is not very complex, so the modified simpler version sti
 - BUFFER_SIZE = int(1e6)  # replay buffer size
 - BATCH_SIZE = 512        # minibatch size
 - GAMMA = 0.99            # discount factor
-- TAU = 0.1              # for soft update of target parameters
+- TAU = 0.1               # for soft update of target parameters
 - LR_ACTOR = 1e-4         # learning rate of the actor 
 - LR_CRITIC = 1e-3        # learning rate of the critic
 - WEIGHT_DECAY = 0        # L2 weight decay
@@ -31,7 +32,11 @@ I think the environment is not very complex, so the modified simpler version sti
 
 # Rewards
 
-![alt text](https://github.com/tiantian20007/DRLND-CollabCompet/blob/master/res/obs_full.png "Result")
+Critic with full observation of all agents.
+![alt text](https://github.com/tiantian20007/DRLND-CollabCompet/blob/master/res/obs_full.png "obs_full")
+
+Critic with only local observation of each agent.
+![alt text](https://github.com/tiantian20007/DRLND-CollabCompet/blob/master/res/obs.png "obs")
 
 
 # Future Work
