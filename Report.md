@@ -1,9 +1,10 @@
 # Method
 
 ## Algorithm
-# MADDPG - Multi-Agent Deep Deterministic Policy Gradient Algorithm
 
-![alt text](https://github.com/tiantian20007/DRLND-CollabCompet/blob/master/res/algorithm.png "algorithm")
+MADDPG - Multi-Agent Deep Deterministic Policy Gradient Algorithm
+
+![alt text](https://github.com/tiantian20007/DRLND-CollabCompet/blob/master/res/algorithm2.png "algorithm")
 
 ## Model architectures
 
@@ -11,6 +12,8 @@ A DNN with 2 hidden layers which contains 256 and 128 neuron units for both acto
 First, I tried critics for each agent with full observation of all agent as input, then an modified critics with only local observation of each agent, the two models all generate the qulified result.
 The ones with full observation train a little bit long with 963 episode and the other ones took 600 episode.
 I think the environment is not very complex, so the modified simpler version still qualify. 
+
+![alt text](https://github.com/tiantian20007/DRLND-CollabCompet/blob/master/res/algorithm.png "algorithm")
 
 
 ## Hyperparameters
