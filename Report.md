@@ -6,6 +6,12 @@ MADDPG - Multi-Agent Deep Deterministic Policy Gradient Algorithm
 
 ![alt text](https://github.com/tiantian20007/DRLND-CollabCompet/blob/master/res/algorithm2.png "algorithm")
 
+The algorithm is implemented in files below
+- maddpg.py 
+- ddpg.py
+- buffer.py
+- OUNoise.py
+
 ## Model architectures
 
 A DNN with 2 hidden layers which contains 256 and 128 neuron units for both actor and critic. We choose relu as the activate function. 
@@ -15,6 +21,9 @@ The one with full observation train a little bit long with 963 episode and the o
 I think the environment is not very complex, so the modified simpler version still qualify. 
 
 ![alt text](https://github.com/tiantian20007/DRLND-CollabCompet/blob/master/res/algorithm.png "algorithm")
+
+The model i simplemented in files below
+- networkforall.py
 
 
 ## Hyperparameters
